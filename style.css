@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100svw;
+    height: 100svh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/background.jpg") center / cover no-repeat;
+}
+
+.card {
+    position:relative;
+    width: 450px;
+    height: 500px;
+    justify-content: center;
+    align-items: start;
+    /* glassmorphism */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px) saturate(180%);
+    --webkit-backdrop-filter: blur(5px) saturate(180%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+
+.card .type {
+    padding-top: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .type .type-container {
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(181, 183, 214, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .type .type-container input{
+    margin: 0px 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.card .type .type-container input:hover {
+    padding: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgb(222, 239, 222), rgb(153, 242, 203));
+    cursor: pointer;
+    color: black;
+}
+
+.card .details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .details .details-content {
+    border: 1px solid rgba(181, 183, 214, 0.5);
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 95%;
+    padding: 10px;
+    
+}
+
+.card .details .details-content .price {
+    color: white;
+    text-align: center;
+}
+
+.card .details .details-content .price-type {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.card .details .details-content hr {
+    margin: 10px;
+}
+
+.card .details .details-content .plan-details ul{
+    color: white;
+    padding-left: 30px;
+}
+
+.card .details .details-content .plan-details ul li {
+    margin-bottom: 10px;
+}
+
+.card .details .details-content .plan-details ul li::marker {
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+    content: '✓ ';
+}
+
+.card .details .details-content .plan-details .plan-btn {
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, rgb(222, 239, 222), rgb(153, 242, 203));
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+
+.card .details .details-content .plan-details .plan-btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px -2px rgb(133, 201, 133);
+}
+
+.card .details .details-content .plan-details .plan-btn-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
