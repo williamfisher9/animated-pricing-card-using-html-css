@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+    <div class="logo">
+        <a href="#" class="logo-link">
+            <img src="./assets/logo.jpg" alt="logo material" />
+            <h3>Solutions Provider</h3>
+        </a>
+    </div>
+
     <div class="card">
         <div class="type">
             <div class="type-container">
-                <input type="button" value="Team" />
-                <input type="button" value="Basic" />
-                <input type="button" value="Community" />
+                <input id="teamButton" type="button" value="Team" />
+                <input id="basicButton" type="button" value="Basic" />
+                <input id="communityButton" type="button" value="Community" />
             </div>
         </div>
 
 
         <div class="details">
             <div class="details-content">
-                <h1 class="price"><sup style="font-size: large;">$</sup>99.9<sub style="font-size: small;">/mon</sub></h1>
+                <div class="team-details-content">
+                    <h1 class="price"><sup style="font-size: large;">$</sup>99.9<sub style="font-size: small;">/mon</sub></h1>
                 <p class="price-type">For professsional use</p>
                 <hr />
                 <div class="plan-details">
@@ -35,8 +43,50 @@
                         <input class="plan-btn" type="button" value="Choose Plan" />
                     </div>
                 </div>
+                </div>
+
+                <div class="community-details-content" style="display: none;">
+                    <h1 class="price"><sup style="font-size: large;">$</sup>109.9<sub style="font-size: small;">/mon</sub></h1>
+                <p class="price-type">For community use</p>
+                <hr />
+                <div class="plan-details">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+
+                    <div class="plan-btn-div">
+                        <input class="plan-btn" type="button" value="Choose Plan" />
+                    </div>
+                </div>
+                </div>
+
+                <div class="basic-details-content" style="display: none;">
+                    <h1 class="price"><sup style="font-size: large;">$</sup>11.9<sub style="font-size: small;">/mon</sub></h1>
+                <p class="price-type">For basic use</p>
+                <hr />
+                <div class="plan-details">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+
+                    <div class="plan-btn-div">
+                        <input class="plan-btn" type="button" value="Choose Plan" />
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
